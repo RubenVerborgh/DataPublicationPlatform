@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+/*! @license MIT ©2013 Ruben Verborgh */
+var Server = require('../lib/Server'),
+    JsonDataSource = require('../lib/JsonDataSource');
+
+var port = process.argv[2] || 3000;
+new Server(new JsonDataSource('data')).listen(port);
+console.log('Server running on http://localhost:' + port);

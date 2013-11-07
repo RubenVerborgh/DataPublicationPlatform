@@ -1,0 +1,14 @@
+{
+  "name": "Data-Publishing-Platform-Example",
+  "version": "0.1.0",
+  "scripts": {
+    "hint": "./node_modules/jshint/bin/jshint lib bin"
+  },
+  "dependencies": {
+    "express": "3.4.x",
+    "q": "0.9.x"
+  },
+  "devDependencies": {
+    "jshint": "2.3.x"
+  }
+}
