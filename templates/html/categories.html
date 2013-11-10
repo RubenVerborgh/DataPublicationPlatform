@@ -1,0 +1,7 @@
+<% inherits('main') %>
+<h1>Data Publishing Platform</h1>
+<ul class="categories">
+<% categories.forEach(function (category) { %>
+  <li><a href="<%= category.url %>"><%= category.title %></a></li>
+<% }) %>
+</ul>

@@ -1,0 +1,38 @@
+<% inherits('main') %>
+<h1><%= title %></h1>
+
+<% if (resource.type) { %>
+  <p class="type">
+    type: <a href="<%= type.url %>"><%= type.name %></a>
+  </p>
+<% } %>
+
+<% if (resource.description) { %>
+  <p class="description"><%= description %></p>
+<% } %>
+
+<% if (resource.participants) { %>
+  <h2>Participants</h2>
+  <dl class="participants">
+    <% participants.forEach(function (participant) { %>
+      <dt><%= participant.role_name %></dt>
+      <dd><a href="<%= participant.person_url %>"><%= participant.person_name %></a><dd>
+    <% }) %>
+  </dl>
+<% } %>
+
+<% if (resource.department) { %>
+  <h2>Department</h2>
+  <p>
+    <a href="<%= department.url %>"><%= department.name %><a>
+  </p>
+<% } %>
+
+<% if (resource.images) { %>
+  <h2>Images</h2>
+  <% images.forEach(function (image) { %>
+    <% if (image.n) { %>
+      <img src="<%= image.n.url %>" />
+    <% } %>
+  <% }) %>
+<% } %>

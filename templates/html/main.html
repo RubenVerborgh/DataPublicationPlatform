@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= resource.title ? title + ' | ' : '' %>Data Publishing Platform</title>
+  </head>
+<body>
+  <div id="main">
+    <%- contents %>
+  </div>
+  <footer>
+    <% if (resource.url) { %>
+    <p class="permanent">
+      Permanent URL of this resource: <a href="<%= url %>"><%= url %></a>
+    </p>
+    <% } %>
+  </footer>
+</body>
+</html>
