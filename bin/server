@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*! @license MIT ©2013 Ruben Verborgh */
 var Server = require('../lib/Server'),
-    JsonDataSource = require('../lib/JsonDataSource');
+    JsonDataSource = require('../lib/datasource/JsonDataSource');
 
 var port = process.argv[2] || 3000,
     host = process.argv[3] || 'localhost:' + port;
