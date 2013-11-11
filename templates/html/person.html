@@ -1,0 +1,15 @@
+<% inherits('main') %>
+<h1><%= name %></h1>
+
+<% if (resource.biography) { %>
+  <p class="biography"><%= biography %></p>
+<% } %>
+
+<% if (resource.roles) { %>
+  <h2>Roles</h2>
+  <ul>
+    <% resource.roles.forEach(function (role) { %>
+      <li><a href="<%= role.url %>"><%= role.name %></a> <%= role.count_objects %> objects</li>
+    <% }) %>
+  </ul>
+<% } %>
