@@ -1,12 +1,13 @@
 <% inherits('main') %>
 <h1><%= title %></h1>
-<p>See <a href="<%= parent.url %>">all objects</a>.</p>
 
 <% if (resource.type) { %>
   <p class="type">
     type: <a href="<%= type.url %>"><%= type.name %></a>
   </p>
 <% } %>
+
+<p>See <a href="<%= parent.url %>">all objects</a>.</p>
 
 <% if (resource.description) { %>
   <p class="description"><%= description %></p>
