@@ -1,5 +1,6 @@
 <% inherits('main') %>
 <h1><%= name %></h1>
+<p>See <a href="<%= parent.url %>">all persons</a>.</p>
 
 <% if (resource.biography) { %>
   <p class="biography"><%= biography %></p>

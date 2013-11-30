@@ -1,5 +1,6 @@
 <% inherits('main') %>
 <h1><%= title %></h1>
+<p>See <a href="<%= parent.url %>">all categories</a>.</p>
 <ul class="items">
 <% items.forEach(function (item) { %>
   <li><a href="<%= item.url %>"><%= item.title %></a></li>

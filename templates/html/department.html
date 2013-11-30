@@ -1,5 +1,6 @@
 <% inherits('main') %>
 <h1>Department: <%= name %></h1>
+<p>See <a href="<%= parent.url %>">all departments</a>.</p>
 <% if (resource.short_name) { %>
   <p class="abbreviation">Abbreviation: <%= short_name %></p>
 <% } %>
