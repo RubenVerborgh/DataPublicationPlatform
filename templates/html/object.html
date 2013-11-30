@@ -29,7 +29,7 @@
   </p>
 <% } %>
 
-<% if (resource.images) { %>
+<% if (resource.images && resource.images.length) { %>
   <h2>Images</h2>
   <% images.forEach(function (image) { %>
     <% if (image.n) { %>
